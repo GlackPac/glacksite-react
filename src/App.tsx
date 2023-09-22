@@ -4,7 +4,6 @@ import About from "./pages/About";
 import Stuff from "./pages/Stuff";
 import Home from "./pages/Home";
 import Navbar from './components/Navbar';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
