@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/glacksite/static/css/main.31d6cfe0.css",
-    "main.js": "/glacksite/static/js/main.db215601.js",
+    "main.css": "/glacksite/static/css/main.eefc237f.css",
+    "main.js": "/glacksite/static/js/main.f7a1e2b9.js",
+    "static/media/raven.png": "/glacksite/static/media/raven.6f03a5aa62f1bbe6924b.png",
     "index.html": "/glacksite/index.html",
-    "main.db215601.js.map": "/glacksite/static/js/main.db215601.js.map"
+    "main.eefc237f.css.map": "/glacksite/static/css/main.eefc237f.css.map",
+    "main.f7a1e2b9.js.map": "/glacksite/static/js/main.f7a1e2b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.db215601.js"
+    "static/css/main.eefc237f.css",
+    "static/js/main.f7a1e2b9.js"
   ]
 }
