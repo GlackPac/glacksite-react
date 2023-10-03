@@ -11,14 +11,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <>
-      <Container>
         <GlackNavigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/stuff" element={<Stuff />} />
         </Routes>
-      </Container>
     </>
   );
 }

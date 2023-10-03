@@ -1,8 +1,11 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const About = (props:any) => {
     return (
-        <p>Hello, i'm About</p>
+        <Container fluid>
+            <p>Hello, i'm Home</p>
+        </Container>
     )
 }
 

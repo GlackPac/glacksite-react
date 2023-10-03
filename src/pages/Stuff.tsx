@@ -1,8 +1,11 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Stuff = (props:any) => {
     return (
-        <p>Hello, i'm Stuff</p>
+        <Container fluid>
+            <p>Hello, i'm Stuff</p>
+        </Container>
     )
 }
 

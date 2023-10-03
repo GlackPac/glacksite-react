@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { HashRouter as Router } from 'react-router-dom';
+import Container from 'react-bootstrap/esm/Container';
 
 
 
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <Router>
-    <App />
-  </Router>
+  <Container fluid>
+    <Router>
+      <App />
+    </Router>
+  </Container>
 );
