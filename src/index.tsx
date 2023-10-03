@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
     <BrowserRouter>
-      <Container fluid>
+      <Container>
         <App />
       </Container>
     </BrowserRouter>
