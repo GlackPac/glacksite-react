@@ -11,9 +11,9 @@ const Stuff = (props:any) => {
         <Container fluid>
             <p>Hello, i'm Stuff</p>
             <ProjectsPage/>
-            <FuncHello name="function" enthusiasmLevel={3}/>
+            {/* <FuncHello name="function" enthusiasmLevel={3}/>
             <ClassHello name="class" enthusiasmLevel={2}/>
-            <StateHello name="state"/>
+            <StateHello name="state"/> */}
         </Container>
     )
 }
