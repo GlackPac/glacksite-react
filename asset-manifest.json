@@ -1,14 +1,16 @@
 {
-  "files": {
-    "main.css": "/glacksite/static/css/main.eefc237f.css",
-    "main.js": "/glacksite/static/js/main.381f62d8.js",
-    "static/media/raven.svg": "/glacksite/static/media/raven.c9d6dce09dd85ce24444c2860185c430.svg",
-    "index.html": "/glacksite/index.html",
-    "main.eefc237f.css.map": "/glacksite/static/css/main.eefc237f.css.map",
-    "main.381f62d8.js.map": "/glacksite/static/js/main.381f62d8.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.eefc237f.css",
-    "static/js/main.381f62d8.js"
-  ]
+  "main.css": "/glacksite/static/css/main.b85ca34f.chunk.css",
+  "main.js": "/glacksite/static/js/main.79b3d90b.chunk.js",
+  "main.js.map": "/glacksite/static/js/main.79b3d90b.chunk.js.map",
+  "static/css/1.0c529c44.chunk.css": "/glacksite/static/css/1.0c529c44.chunk.css",
+  "static/js/1.91e5a6e9.chunk.js": "/glacksite/static/js/1.91e5a6e9.chunk.js",
+  "static/js/1.91e5a6e9.chunk.js.map": "/glacksite/static/js/1.91e5a6e9.chunk.js.map",
+  "runtime~main.js": "/glacksite/static/js/runtime~main.8aca1ec2.js",
+  "runtime~main.js.map": "/glacksite/static/js/runtime~main.8aca1ec2.js.map",
+  "static/media/raven.svg": "/glacksite/static/media/raven.5d2cddde.svg",
+  "static/css/1.0c529c44.chunk.css.map": "/glacksite/static/css/1.0c529c44.chunk.css.map",
+  "static/css/main.b85ca34f.chunk.css.map": "/glacksite/static/css/main.b85ca34f.chunk.css.map",
+  "index.html": "/glacksite/index.html",
+  "precache-manifest.af959f9f5badda0aaaef8f1f534ee4ca.js": "/glacksite/precache-manifest.af959f9f5badda0aaaef8f1f534ee4ca.js",
+  "service-worker.js": "/glacksite/service-worker.js"
 }
