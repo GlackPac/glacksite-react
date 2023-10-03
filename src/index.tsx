@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Container from 'react-bootstrap/esm/Container';
 
 
@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <Container fluid>
-    <Router>
-      <App />
-    </Router>
-  </Container>
+    <BrowserRouter>
+      <Container fluid>
+        <App />
+      </Container>
+    </BrowserRouter>
 );
