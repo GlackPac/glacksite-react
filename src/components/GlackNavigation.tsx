@@ -1,34 +1,35 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap';
 import logo from '../assets/images/raven.svg';
+import "./GlackNavigation.css";
+import { LinkContainer} from 'react-router-bootstrap';
 import { Link } from "react-router-dom"
 
 function GlackNavigation() {
   return (
     <>
       <Navbar style={{borderBottom:'1px solid #5a5a5a'}}>
+        <LinkContainer to="/about">
           <Navbar.Brand>
-            <img
-              alt="Caw!"
-              src={logo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            glacksite
-          </Navbar.Brand>
+              <img
+                alt="Caw!"
+                src={logo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              <Link to="/" style={{ textDecoration: 'none', color: '#dee2e6' }}>glacksite</Link>
+            </Navbar.Brand>
+        </LinkContainer>
           <Nav className="me-auto">
-            <Nav.Link>
-              <Link to="/">Home</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/about">About</Link>
-            </Nav.Link>
-            <Nav.Link>
-            <Link to="/stuff">Stuff</Link>
-            </Nav.Link>
+            <LinkContainer to="/about">
+              <Nav.Link as="a">About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/stuff">
+              <Nav.Link as="a">Stuff</Nav.Link>
+            </LinkContainer>
           </Nav>
       </Navbar>
       <div className='pb-3'></div>
