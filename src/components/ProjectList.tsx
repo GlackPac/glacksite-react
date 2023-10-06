@@ -1,7 +1,8 @@
 import React from 'react';
-import { Image, Card, Row } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { Project } from '../data/Project';
 import ProjectCard from './ProjectCard';
+import ProjectForm from './ProjectForm';
 
 interface ProjectListProps {
   projects: Project[];
@@ -9,9 +10,16 @@ interface ProjectListProps {
 
 function ProjectList({ projects }: ProjectListProps) {
     const items = projects.map(project =>(
-        <ProjectCard project={project}/>
+        <Row key={project.id}>
+            <Col>
+                <ProjectCard project={project}/>
+            </Col>
+            <Col>
+                <ProjectForm/>
+            </Col>
+        </Row>
     ));
-    return <Row>{items}</Row>
+    return <Container>{items}</Container>
 }
 
 export default ProjectList;

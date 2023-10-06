@@ -1,6 +1,7 @@
 import React from 'react';
-import { Image, Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { Project } from '../data/Project';
+import { BsPencil } from "react-icons/bs";
 
 function formatDescription(description: string): string {
     return description.substring(0, 60) + '...';
@@ -12,16 +13,29 @@ interface ProjectCardProps {
 
 function ProjectCard(props: ProjectCardProps) {
     const { project } = props;
+    const handleEditClick = (projectBeingEdited: Project) => {
+        console.log(projectBeingEdited);
+    }
     return (
-        <Card style={{ width: '18rem'}}>
-            <Image src={project.imageUrl} alt={project.name}/>
-            <section className='section-dark'>
-                <h5 className='strong'>
-                    <strong>{project.name}</strong>
-                </h5>
-                <p>{formatDescription(project.description)}</p>
-                <p>Budget: ${project.budget.toLocaleString()}</p>
-            </section>
+        <Card>
+            <Card.Img variant="top" src={project.imageUrl} alt={project.name}/>
+            <Card.Body>
+                <Card.Title>{project.name}</Card.Title>
+                <Card.Text>
+                    {formatDescription(project.description)}
+                </Card.Text>
+                <Card.Text>
+                    Budget: ${project.budget.toLocaleString()}
+                </Card.Text>
+                <Button
+                    variant="secondary"
+                    onClick={() => {
+                        handleEditClick(project);
+                    }}
+                >
+                    <BsPencil/> Edit
+                </Button>
+            </Card.Body>
         </Card>
     );
 }
