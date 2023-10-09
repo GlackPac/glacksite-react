@@ -5,7 +5,7 @@ import ProjectsPage from "../components/ProjectsPage";
 
 const Stuff = (props:any) => {
     return (
-        <Container fluid>
+        <Container>
             <p>Hello, i'm Stuff</p>
             <ProjectsPage/>
         </Container>
