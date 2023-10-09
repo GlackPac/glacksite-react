@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { GiRaven } from 'react-icons/gi';
 import { Link } from "react-router-dom"
@@ -7,7 +7,7 @@ function GlackNavigation() {
 
   return (
     <>
-      <Navbar style={{borderBottom:'1px solid #5a5a5a'}}>
+      <Navbar bg="dark" style={{borderBottom:'1px solid #5a5a5a'}} sticky="top">
         <Navbar.Brand>
           <GiRaven size='1.5em' color='#4a90e2'/>
           <Link to="/" style={{ textDecoration: 'none', color: '#dee2e6' }}>glacksite</Link>
