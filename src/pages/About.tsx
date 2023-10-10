@@ -1,4 +1,4 @@
-import Reactfrom 'react';
+import React from 'react';
 import { Container} from 'react-bootstrap';
 import Clock from '../components/ClockLifecycle';
 import LoadingTest from '../components/LoadingEffect';

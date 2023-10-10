@@ -1,10 +1,14 @@
 import React from 'react';
 import { Form, Button, Row } from 'react-bootstrap';
 
-function ProjectForm() {
+interface ProjectFormProps {
+    onCancel: () => void;
+}
+
+function ProjectForm({ onCancel}:  ProjectFormProps) {
     return (
         <>
-            <Form>
+            <Form className='m-2' style={{ width: '18rem' }}>
                 <Row className="mb-2">
                     <Form.Group controlId="formGridName">
                         <Form.Label>Project Name</Form.Label>
@@ -28,7 +32,7 @@ function ProjectForm() {
                         <Form.Check type="checkbox" label="Active?"/>
                     </Form.Group>
                 </Row>
-                <Button>Submit</Button>
+                <Button className='m-1'>Submit</Button><Button onClick={onCancel} className='m-1'>Cancel</Button>
             </Form>
         </>
     );
