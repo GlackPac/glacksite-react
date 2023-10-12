@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
+import { Project } from '../data/Project'
 import { Form, Button, Row } from 'react-bootstrap';
 
 interface ProjectFormProps {
+    onSave: (project: Project) => void;
     onCancel: () => void;
 }
 
-function ProjectForm({ onCancel}:  ProjectFormProps) {
+function ProjectForm({ onSave, onCancel}:  ProjectFormProps) {
+    
+    const handleSubmit = (event: SyntheticEvent) => {
+        event.preventDefault();
+        onSave(new Project({name: 'Updated Project'}));
+    };
+    
     return (
         <>
-            <Form className='m-2' style={{ width: '18rem' }}>
+            <Form className='m-2' style={{ width: '18rem' }}
+                onSubmit={handleSubmit}
+            >
                 <Row className="mb-2">
                     <Form.Group controlId="formGridName">
                         <Form.Label>Project Name</Form.Label>
@@ -32,7 +42,7 @@ function ProjectForm({ onCancel}:  ProjectFormProps) {
                         <Form.Check type="checkbox" label="Active?"/>
                     </Form.Group>
                 </Row>
-                <Button className='m-1'>Submit</Button><Button onClick={onCancel} className='m-1'>Cancel</Button>
+                <Button type='submit' className='m-1'>Submit</Button><Button onClick={onCancel} className='m-1'>Cancel</Button>
             </Form>
         </>
     );

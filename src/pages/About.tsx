@@ -3,6 +3,7 @@ import { Container} from 'react-bootstrap';
 import Clock from '../components/ClockLifecycle';
 import LoadingTest from '../components/LoadingEffect';
 import Dropdown from '../components/DropdownConditional';
+import ExampleForm from '../components/ExampleForm';
 
 const About = (props:any) => {
     return (
@@ -11,6 +12,7 @@ const About = (props:any) => {
             <Clock/>
             <LoadingTest/>
             <Dropdown/>
+            <ExampleForm/>
         </Container>
     )
 }

@@ -10,7 +10,7 @@ function DropdownMenu() {
   
     return (
         <div>
-            <Button variant='secondary' onClick={handleClick}>Actions</Button>
+            <Button className='my-1' variant='secondary' onClick={handleClick}>Actions</Button>
             {isOpen && (
                 <ul>
                     <li>Edit</li>
