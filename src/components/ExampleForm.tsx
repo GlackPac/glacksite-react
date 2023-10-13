@@ -11,10 +11,9 @@ function ExampleForm() {
     };
   
     return (
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} className="my-2" style={{ width: '18rem', outline:'1px solid #5a5a5a', outlineOffset:'5px'}}>
         <Form.Label>Username</Form.Label>
         <Form.Control
-            style={{ width: '18rem' }}
             type="text"
             name="username"
             value={username}
@@ -22,7 +21,6 @@ function ExampleForm() {
         />
         <Form.Label>Password</Form.Label>
         <Form.Control
-            style={{ width: '18rem' }}
             type="password"
             name="password"
             value={password}
