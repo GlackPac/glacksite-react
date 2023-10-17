@@ -1,26 +1,14 @@
-import React, {useState} from 'react';
-import { Button, Form } from 'react-bootstrap';
+import React from 'react';
+import { Button, Form} from 'react-bootstrap';
 
 function ExampleFormTwo() {
     const [department, setDepartment] = React.useState('');
     const [message, setMessage] = React.useState('');
     const [agreedToTerms, setAgreedToTerms] = React.useState(false);
-  
+
     function handleSubmit(e: React.ChangeEvent<HTMLFormElement>) {
       e.preventDefault();
-      console.log('submitting', stateToString());
-    }
-  
-    function stateToString() {
-      return JSON.stringify(
-        {
-          department,
-          message,
-          agreedToTerms,
-        },
-        null,
-        ' '
-      );
+      console.log('submitting', { department, message, agreedToTerms });
     }
   
     return (
@@ -30,6 +18,7 @@ function ExampleFormTwo() {
         style={{ width: '18rem', outline:'1px solid #5a5a5a', outlineOffset:'5px'}}
       >
         <Form.Select
+          required
           name="department"
           value={department}
           onChange={(e) => setDepartment(e.target.value)}
@@ -39,22 +28,31 @@ function ExampleFormTwo() {
           <option value="pr">Public Relations</option>
           <option value="support">Support</option>
         </Form.Select>
-        <Form.Control
+          <Form.Control
+            required
             className='my-2'
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)} 
             as="textarea" 
             placeholder='Enter description'
-        />
+          />
         <Form.Check
-            type="checkbox"
-            name="agreedToTerms"
-            checked={agreedToTerms}
-            onChange={(e) => setAgreedToTerms(e.target.checked)}
-            label="I agree to the terms and conditions."
+          required
+          type="checkbox"
+          name="agreedToTerms"
+          checked={agreedToTerms}
+          onChange={(e) => setAgreedToTerms(e.target.checked)}
+          label="I agree to the terms and conditions."
         />
-        <Button type="submit" className='m-1' variant='secondary'>Send</Button>
+        <Button 
+          type="submit" 
+          className='m-1' 
+          variant='secondary'
+          disabled={!department|| !message || !agreedToTerms }
+        >
+        Send
+        </Button>
       </Form>
     );
   }

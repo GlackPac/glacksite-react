@@ -6,7 +6,7 @@ import ProjectsPage from "../components/ProjectsPage";
 const Stuff = (props:any) => {
     return (
         <Container>
-            <p>Hello, i'm Stuff</p>
+            <h3>Stuff</h3>
             <ProjectsPage/>
         </Container>
     )

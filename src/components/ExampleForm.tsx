@@ -1,13 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 function ExampleForm() {
     const [username, setUsername] = React.useState('');
     const [password, setPassword] = React.useState('');
+    const fileInput = React.useRef(null);
 
     const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
       e.preventDefault();
+      console.log(fileInput.current);
       console.log(username, password);
+      if (!fileInput) return;
     };
   
     return (
@@ -16,7 +19,6 @@ function ExampleForm() {
         <Form.Control
             type="text"
             name="username"
-            value={username}
             onChange={(event) => setUsername(event.target.value)}
         />
         <Form.Label>Password</Form.Label>
@@ -26,7 +28,20 @@ function ExampleForm() {
             value={password}
             onChange={(event) => setPassword(event.target.value)}
         />
-        <Button variant='secondary' className='my-2' type="submit">Sign In</Button>
+        <Form.Label>File Input</Form.Label>
+        <Form.Control
+          type="file"
+          ref={fileInput}
+        >
+        </Form.Control>
+        <Button 
+          variant='secondary' 
+          className='my-2' 
+          type="submit"
+          disabled={!username || !password}
+        >
+        Sign In
+        </Button>
       </Form>
     );
   }

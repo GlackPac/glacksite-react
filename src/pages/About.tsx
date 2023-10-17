@@ -5,17 +5,19 @@ import LoadingTest from '../components/LoadingEffect';
 import Dropdown from '../components/DropdownConditional';
 import ExampleForm from '../components/ExampleForm';
 import ExampleFormTwo from '../components/ExampleFormTwo';
+import RefTesting from '../components/RefTesting';
 
 const About = (props:any) => {
     return (
         <Container>
-            <p>Hello, i'm About</p>
+            <h3>About</h3>
             <Clock/>
             <LoadingTest/>
             <Dropdown/>
             <ExampleForm/>
             <br/>
             <ExampleFormTwo/>
+            <RefTesting/>
         </Container>
     )
 }
