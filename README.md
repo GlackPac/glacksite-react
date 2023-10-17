@@ -2,8 +2,6 @@
 
 Hello everyone!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,8 +11,10 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm run deploy`
+
+Will use the gh-pages library to deploy the project folder to the gh-pages branch.
+This will publish the github pages site automatically within a few minutes.
 
 ### `npm test`
 
@@ -43,6 +43,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Created with reference to Nelson Michael's Guide - [Deploy React apps to GitHub Pages](https://blog.logrocket.com/deploying-react-apps-github-pages/)
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Also referenced [Hands on React](https://handsonreact.com/docs/) , [React Bootstrap](https://react-bootstrap.netlify.app/)
