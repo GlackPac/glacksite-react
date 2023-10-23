@@ -1,13 +1,20 @@
 import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
-import { GiRaven } from 'react-icons/gi';
+import { Container} from 'react-bootstrap';
 
 function GlackFooter() {
 
   return (
-    <Container style={{backgroundColor: '#2b3035', borderRadius: '10px 10px 0px 0px'}}>
-        <Row className='pt-4 pb-5'>
-        </Row>
+    <Container>
+      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div className="col-md-4 d-flex align-items-center">
+          <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          </a>
+          <span className="mb-3 mb-md-0 text-body-secondary">2023 | glacksite</span>
+        </div>
+
+        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+        </ul>
+      </footer>
     </Container>
   );
 }
