@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "api": "json-server ./src/api/db.json",
+    "api": "json-server ./src/api/db.json --port 4000",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

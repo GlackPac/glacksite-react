@@ -4,7 +4,9 @@ import About from "./pages/About";
 import Stuff from "./pages/Stuff";
 import Home from "./pages/Home";
 import GlackNavigation from "./components/GlackNavigation";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import GlackFooter from './components/GlackFooter';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/stuff" element={<Stuff />} />
         </Routes>
+      <GlackFooter/>
     </>
   );
 }
