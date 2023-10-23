@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/glacksite/static/css/main.eefc237f.css",
-    "main.js": "/glacksite/static/js/main.4e949e76.js",
+    "main.js": "/glacksite/static/js/main.2ab8b2b5.js",
     "index.html": "/glacksite/index.html",
     "main.eefc237f.css.map": "/glacksite/static/css/main.eefc237f.css.map",
-    "main.4e949e76.js.map": "/glacksite/static/js/main.4e949e76.js.map"
+    "main.2ab8b2b5.js.map": "/glacksite/static/js/main.2ab8b2b5.js.map"
   },
   "entrypoints": [
     "static/css/main.eefc237f.css",
-    "static/js/main.4e949e76.js"
+    "static/js/main.2ab8b2b5.js"
   ]
 }
