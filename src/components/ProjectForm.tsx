@@ -12,9 +12,9 @@ function ProjectForm({
     project: initialProject,
     onSave, 
     onCancel,
-}:  ProjectFormProps) {
+    }:  ProjectFormProps) {
     const [project, setProject] = useState(initialProject);
-    const [errors, setErrors] = useState ({
+    const [errors, setErrors] = useState({
         name: '',
         description: '',
         budget: '',

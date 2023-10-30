@@ -14,6 +14,7 @@ function GlackNavigation() {
         </Navbar.Brand>
           <Link className="mx-2" to="/widgets" style={{ textDecoration: 'none', color: '#dee2e6' }}>Widgets</Link>
           <Link className="mx-2" to="/handsonreact" style={{ textDecoration: 'none', color: '#dee2e6' }}>Hands On React</Link>
+          <Link className="mx-2" to="/workshop" style={{ textDecoration: 'none', color: '#dee2e6' }}>Workshop</Link>
       </Navbar>
       <div className='pb-3'></div>
     </>

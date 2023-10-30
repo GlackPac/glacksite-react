@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Spinner, Button } from 'react-bootstrap';
+import { Spinner, Button, Row } from 'react-bootstrap';
 
 function LoadingTest() {
     const [loading, setLoading] = useState(false);
@@ -29,7 +29,9 @@ function LoadingTest() {
     return (
       <>
         {loading && <Spinner size="sm"/>}
-        {data && <p>{JSON.stringify(data, null, ' ')}</p>}
+        <Row>
+          {!loading && data && <p>{JSON.stringify(data, null, ' ')}</p>}
+        </Row>
         <span>Current Page: {page}</span>
         <Button variant='secondary' className='mx-2' onClick={handleNext}>Load Data</Button>
       </>

@@ -55,11 +55,8 @@ function ProjectsPage() {
 
     return (
         <>
-            <h3>Tutorial from <a href="https://handsonreact.com/docs/forms">here</a></h3>
-            <h5 className='fst-italic'>Currently between Labs C and D</h5>
+            <h5>Tutorial from <a href="https://handsonreact.com/docs/forms">here</a></h5>
             <br/>
-            <p>Content here:</p>
-
             {error && (
                 <Row>
                         <p>
