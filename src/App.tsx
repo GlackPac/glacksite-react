@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import About from "./pages/About";
-import Stuff from "./pages/Stuff";
+import Widgets from "./pages/Widgets";
+import HandsOnReact from "./pages/HandsOnReact";
 import Home from "./pages/Home";
 import GlackNavigation from "./components/GlackNavigation";
 import GlackFooter from './components/GlackFooter';
@@ -14,8 +14,8 @@ function App() {
       <GlackNavigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/stuff" element={<Stuff />} />
+          <Route path="/widgets" element={<Widgets />} />
+          <Route path="/handsonreact" element={<HandsOnReact />} />
         </Routes>
       <GlackFooter/>
     </>

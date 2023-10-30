@@ -14,7 +14,7 @@ function ExampleForm() {
     };
   
     return (
-      <Form onSubmit={handleSubmit} className="my-2" style={{ width: '18rem', outline:'1px solid #5a5a5a', outlineOffset:'5px'}}>
+      <Form onSubmit={handleSubmit} className="my-2" style={{ width: '18rem'}}>
         <Form.Label>Username</Form.Label>
         <Form.Control
             type="text"

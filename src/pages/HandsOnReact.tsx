@@ -3,13 +3,13 @@ import { Container } from 'react-bootstrap';
 import ProjectsPage from "../components/ProjectsPage";
 
 
-const Stuff = (props:any) => {
+const HandsOnReact = (props:any) => {
     return (
         <Container>
-            <h3>Stuff</h3>
+            <h3>Hands On React Tutorial</h3>
             <ProjectsPage/>
         </Container>
     )
 }
 
-export default Stuff
+export default HandsOnReact

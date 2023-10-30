@@ -15,7 +15,7 @@ function ExampleFormTwo() {
       <Form 
         className="my-2" 
         onSubmit={handleSubmit} 
-        style={{ width: '18rem', outline:'1px solid #5a5a5a', outlineOffset:'5px'}}
+        style={{ width: '18rem'}}
       >
         <Form.Select
           required

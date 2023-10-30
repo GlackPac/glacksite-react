@@ -11,7 +11,8 @@ interface ProjectFormProps {
 function ProjectForm({ 
     project: initialProject,
     onSave, 
-    onCancel}:  ProjectFormProps) {
+    onCancel,
+}:  ProjectFormProps) {
     const [project, setProject] = useState(initialProject);
     const [errors, setErrors] = useState ({
         name: '',

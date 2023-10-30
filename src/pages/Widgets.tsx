@@ -6,18 +6,21 @@ import Dropdown from '../components/DropdownConditional';
 import ExampleForm from '../components/ExampleForm';
 import ExampleFormTwo from '../components/ExampleFormTwo';
 
-const About = (props:any) => {
+const Widgets = (props:any) => {
     return (
         <Container>
             <h3>About</h3>
             <Clock/>
+            <hr/>
             <LoadingTest/>
+            <hr/>
             <Dropdown/>
+            <hr/>
             <ExampleForm/>
-            <br/>
+            <hr/>
             <ExampleFormTwo/>
         </Container>
     )
 }
 
-export default About
+export default Widgets

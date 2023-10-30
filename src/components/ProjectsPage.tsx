@@ -12,10 +12,19 @@ function ProjectsPage() {
     const [currentPage, setCurrentPage] = useState(1);
 
     const saveProject = (project: Project) => {
-        let updatedProjects = projects.map((p: Project) => {
-            return p.id === project.id ? project : p;
-        });
-        setProjects(updatedProjects);
+        projectAPI
+            .put(project)
+            .then((updatedProject) => {
+                let updatedProjects = projects.map((p: Project) => {
+                    return p.id === project.id ? new Project(updatedProject) : p;
+                });
+                setProjects(updatedProjects);
+            })
+            .catch((e) => {
+                if (e instanceof Error) {
+                    setError(e.message);
+                }
+            });
     };
 
     useEffect(() => {
@@ -52,7 +61,7 @@ function ProjectsPage() {
             <p>Content here:</p>
 
             {error && (
-                <Row style={{outline:'1px solid #5a5a5a'}}>
+                <Row>
                         <p>
                             <FiAlertTriangle className='me-2'/>
                             {error}
@@ -66,7 +75,7 @@ function ProjectsPage() {
              
             {!loading && !error && (
                 <Row className="justify-content-md-center my-3">
-                    <Col sm lg='2'>
+                    <Col className='text-center' sm lg='2'>
                         <Button variant='secondary' onClick={handleMoreClick}>
                         More...
                         </Button>
@@ -75,10 +84,9 @@ function ProjectsPage() {
             )}
 
             {loading && (
-                <div>
+                <Row className="justify-content-md-center">
                     <Spinner/>
-                    <p>Loading...</p>
-                </div>
+                </Row>
             )}
         </>
         );

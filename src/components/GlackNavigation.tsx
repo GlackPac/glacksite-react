@@ -12,8 +12,8 @@ function GlackNavigation() {
           <GiRaven size='1.5em' color='#4a90e2'/>
           <Link to="/" style={{ textDecoration: 'none', color: '#dee2e6' }}>glacksite</Link>
         </Navbar.Brand>
-          <Link className="mx-2" to="/about" style={{ textDecoration: 'none', color: '#dee2e6' }}>About</Link>
-          <Link className="mx-2" to="/stuff" style={{ textDecoration: 'none', color: '#dee2e6' }}>Stuff</Link>
+          <Link className="mx-2" to="/widgets" style={{ textDecoration: 'none', color: '#dee2e6' }}>Widgets</Link>
+          <Link className="mx-2" to="/handsonreact" style={{ textDecoration: 'none', color: '#dee2e6' }}>Hands On React</Link>
       </Navbar>
       <div className='pb-3'></div>
     </>
