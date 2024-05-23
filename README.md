@@ -1,5 +1,7 @@
 # glacksite
 
+23 May 2024 Update - Leaving in an archived state - making the go to glacksite a HTML/CSS centric site. Less stuff, less loading.
+
 Hello everyone!
 
 ### Setup Guide
